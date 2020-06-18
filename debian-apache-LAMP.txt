@@ -1,0 +1,35 @@
+- Cuando busque opciones con respecto a que S.O se me complico ya que sentia que habia una distribucion correcta para X cosa.
+- La  mejor opcion que encontre fue adaptar un S.O a lo que "imagine" ocuparia en un futuro, detesto regresar a un inicio ya una vez empezado algo :)
+- Debian se me hace una distribucion de Linux que es amigable a la hora de instalar paquetes. Kali linux es una distribucion para pruebas de Pentesting. (FUSION)
+
+> Encuentro util el habilitar DHCP a la hora de instalar la distribucion, una vez instalada para obtener las herramientas que ocupo de kali al estar basada (actualmente) en debian
+  con unas lineas de codigo encontradas de internet hacemos la magia necesaria;
+
+https://gist.github.com/warecrash/f35d4f9a822c452b0c54bbdb47c0c9a5
+
+apt update
+apt -y install wget gnupg dirmngr
+wget -q -O - https://archive.kali.org/archive-key.asc | gpg --import
+gpg --keyserver hkp://keys.gnupg.net --recv-key 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6
+echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
+gpg -a --export ED444FF07D8D0BF6 | sudo apt-key add -
+apt update
+apt -y upgrade
+apt -y dist-upgrade
+apt -y autoremove --purge
+apt -y install kali-linux-everything
+
+Ya tenemos el S.O que necesitamos, la siguiente tarea que se requiere realizar es instalar las herramientas que eh encontrado seran de utilidad en un futuro cercano;
+
+- Servidor LAMP
+* mod_python
+- Wikimedia (instalara de manera automatica herramientas utiles :)
+- Latex (PDFs)
+- ImageMagick (Se hara un gran uso de esta con archivos PDF y PNG)
+- Ghostscript (Supongo que realizara cosas sucias ;)
+
+Sitio muy util para atraer,desvanecer y erradicar dudas:
+http://scarfboy.com/   - WARNING!
+
+
+
