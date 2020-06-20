@@ -24,6 +24,9 @@ Ya tenemos el S.O que necesitamos, la siguiente tarea que se requiere realizar e
 - Servidor LAMP
 * mod_python
 - Wikimedia (instalara de manera automatica herramientas utiles :)
+
+sudo apt-get -y install php7.3-gd php-pear mediawiki
+
 - Latex (PDFs)
 - ImageMagick (Se hara un gran uso de esta con archivos PDF y PNG)
 - Ghostscript (Supongo que realizara cosas sucias ;)
