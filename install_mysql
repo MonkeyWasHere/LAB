@@ -1,0 +1,3 @@
+cd /tmp
+wget repo.mysql.com/mysql-apt-config_{Version mas reciente}_all.deb
+sudo apt install ./mysql-apt-config_{Version mas reciente}_all.deb
